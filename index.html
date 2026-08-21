@@ -20,7 +20,8 @@
              max-width: 800px;
              margin: 0 auto;
              padding: 16px;
-    }
+    display: flex;
+            }
     
     img{
             width: 80px;
@@ -37,9 +38,12 @@
      <main>  
        
         <img src="Gemini_Generated_Image_f7wr4mf7wr4mf7wr-removebg-preview.png" alt=""Bola de futebol com o design clássico de estrelas da UEFA Champions League nas cores laranja e amarelo."">
- <div>
+        <div>
         <h2>Meu Ranking Pessoal</h2>
          <p>Aqui vai estar o meu Rankig! Além disso compartilharei minha opinião sobre o futebol e até outros esportes</p>
+
+         <button>❤️ <span>0</span> </button>
+
 
 <h2> Goleiros</h2>
 <p> A posição de goleiro é, sem dúvida, a mais única e solitária do futebol. Enquanto os dez jogadores de linha buscam a criação de jogadas e o gol adversário, o goleiro é a última linha de defesa e a primeira de ataque.</p>
@@ -94,4 +98,18 @@
 
 
 </body>
+
+<script>
+  const botao = documnet. querySelector("button")
+  botao.addEventListener("click", botaoClicado)
+
+function botaoClicado(){
+    console.log("fui clicado")
+let texto = botao.querySelector("span")
+texto.textContent++;
+}
+
+</script>
+
+
 </html>
